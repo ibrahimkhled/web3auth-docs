@@ -1,5 +1,6 @@
-/** @type {import('@docusaurus/plugin-content-docs/lib/types').Sidebars} */
-module.exports = {
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+
+const sidebars: SidebarsConfig = {
   docs: [
     // Overview Section
     {
@@ -911,3 +912,5 @@ module.exports = {
     },
   ],
 };
+
+export default sidebars;
