@@ -151,7 +151,7 @@ Web3Auth:
 1. Instantiation
 2. Initialization
 
-Please make sure all of this is happening in your application constructor. This makes sure that Web3Auth is initialised when your application starts
+Please make sure all of this is happening in your application constructor. This makes sure that Web3Auth is initialized when your application starts
 up.
 
 ### Importing the packages
@@ -174,7 +174,7 @@ const coreKitInstance = new Web3AuthMPCCoreKit({
 ```
 
 Here, we're using the `chainConfig` property to set the chainId and chainNamespace. The `chainId` and `chainNamespace` are the id and the namespace
-respectively of the EVM chain you're connecting to. We've initialised them for the ethereum chain for this guide.
+respectively of the EVM chain you're connecting to. We've initialized them for the ethereum chain for this guide.
 
 Additionally, sometimes you might face clogging in the network, due to the fact that the test network is a bit clogged at that point. To avoid this,
 we can use the property `rpcTarget` and pass over the url of the node you want to connect to.
@@ -231,7 +231,7 @@ for the user and ask them to input it whenever they want to recover their accoun
 
 ### Export Backup Share
 
-Returns the Backup Mnemonic Share, which can be used to recover the User's account.
+Returns the Backup Mnemonic Share, that can be used to recover the User's account.
 
 ```tsx
 await coreKitInstance.exportBackupShare();
